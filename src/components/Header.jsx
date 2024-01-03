@@ -5,6 +5,7 @@ import {
   Flex,
   GridItem,
   Heading,
+  Highlight,
   Image,
   Link,
   Text,
@@ -65,7 +66,21 @@ export default function Header() {
           damping: 10,
         }}
       >
-        <Heading fontFamily={fonts.cursive}>{homeData.role}</Heading>
+        <Heading cus fontSize={{ base: '2xl' }} fontFamily={fonts.cursive}>
+          <Highlight
+            query={`Full Stack Engineer`}
+            styles={{
+              cursor: "pointer",
+              px: '2', py: '1', borderRadius: "md", bg: colors.p,
+              mx: '2',
+              fontFamily: fonts.special,
+              fontWeight: "bold",
+              color: colors.bg
+            }}
+          >
+            {homeData.role}
+          </Highlight>
+        </Heading>
       </motion.div>
 
       <motion.div

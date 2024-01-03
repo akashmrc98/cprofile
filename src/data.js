@@ -30,7 +30,7 @@ import { LuTextCursor } from "react-icons/lu";
 export const homeData = {
   hello: "Greetings!",
   heading: "AKASH MADDURU",
-  role: "An Experienced Full Stack Developer",
+  role: '"An Experienced Full Stack Engineer',
   description:
     " with a passion for transforming concepts into robust digital solutions. My journey over the past two years at Artemis Network has been a thrilling exploration of the dynamic world of software development. I specialize in crafting end-to-end applications that seamlessly integrate cutting-edge technologies, delivering impactful solutions.",
 };
@@ -63,7 +63,7 @@ export const aboutMe = {
       duration: "Nov 2020 - Jan 2021",
     },
     {
-      company: "SCR, Vijayawada",
+      company: "SCR, BZA",
       role: "Java J2EE Developer Intern",
       description:
         "Interned at SC Railway, Vijayawada, actively participating in the development of day-to-day features, contributing to codebase refactoring, and playing a crucial role in enhancing the existing system.",

@@ -18,6 +18,7 @@ import { fonts } from "../config/fonts";
 import { footerContent, socialData } from "../data";
 import { colors } from "../config/colors";
 import { motion } from "framer-motion";
+import { OrbitControls } from "@react-three/drei";
 
 export default function Footer() {
   return (
@@ -125,6 +126,12 @@ export default function Footer() {
         flat
         linear
       >
+
+        <OrbitControls enableRotate={true} enableZoom={false} enableDamping={false}
+          enablePan={false}
+        />
+
+
         <Model3D />
         <pointLight intensity={1} />
         <ambientLight intensity={1} />

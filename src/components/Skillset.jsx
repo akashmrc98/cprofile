@@ -68,7 +68,7 @@ export default function SkillSet(props) {
               p={2}
               cursor="pointer"
               _hover={{
-                transform: `scale(1.1) translateY(2px) translateX(2px)`,
+                transform: `scale(1.03) `,
               }}
               transition={`all 400ms ease-in-out`}
             >

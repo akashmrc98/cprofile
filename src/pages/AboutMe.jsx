@@ -15,6 +15,8 @@ import { colors } from "../config/colors";
 import { motion } from "framer-motion";
 
 import Akash from "../assets/akash.jpeg";
+import Tilt from 'react-parallax-tilt';
+
 
 export default function AboutMe() {
   return (
@@ -88,14 +90,16 @@ export default function AboutMe() {
             }}
           >
 
-            <Image
-              display={"flex"}
-              justifyContent="center"
-              alignItems={"center"}
-              borderRadius={"md"}
-              maxW="320"
-              src={Akash}
-            />
+            <Tilt>
+              <Image
+                display={"flex"}
+                justifyContent="center"
+                alignItems={"center"}
+                borderRadius={"md"}
+                maxW="320"
+                src={Akash}
+              />
+            </Tilt>
           </motion.div>
 
 

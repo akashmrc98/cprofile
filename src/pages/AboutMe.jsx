@@ -16,7 +16,7 @@ import { colors } from "../config/colors";
 
 export default function AboutMe() {
   return (
-    <Box py={12}>
+    <Box px={2} py={12}>
       <Grid rowGap={"1rem"}>
         <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
           {aboutMe.heading}
@@ -32,7 +32,14 @@ export default function AboutMe() {
         rowGap={"2rem"}
       >
         <GridItem>
-          <Image borderRadius={"md"} maxW="320" src={Akash} />
+          <Image
+            display={"flex"}
+            justifyContent="center"
+            alignItems={"center"}
+            borderRadius={"md"}
+            maxW="320"
+            src={Akash}
+          />
         </GridItem>
         <GridItem display={"grid"} rowGap="1rem" w="100%">
           {aboutMe.content.map((content, i) => (

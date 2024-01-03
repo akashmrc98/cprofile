@@ -22,6 +22,7 @@ export default function Header() {
     <GridItem
       display={"grid"}
       rowGap={{ base: ".5rem", md: "1rem", lg: "1.25rem" }}
+      p={2}
     >
       <Box>
         <Heading>Hello, {`I'm`}</Heading>
@@ -48,11 +49,7 @@ export default function Header() {
         </Heading>
         <Image transform={"translateY(-12px)"} maxW="3" src={QuoteC}></Image>
       </Flex>
-      <Text
-        fontFamily={fonts.reading}
-        fontSize={{ base: "sm", md: "md", lg: "lg" }}
-        textAlign="left"
-      >
+      <Text fontFamily={fonts.reading} textAlign="left">
         {homeData.description}
       </Text>
       <Divider my={{ base: 2, md: 0 }} />

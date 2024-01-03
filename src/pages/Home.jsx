@@ -19,7 +19,7 @@ export default function Home() {
       <GridItem h={{ base: "100%", lg: "50%" }} w="100%">
         <Lottie animationData={akash} loop={true} />
       </GridItem>
-      <Box p={{ base: 4 }} display={{ base: "block", lg: "none" }}>
+      <Box display={{ base: "block", lg: "none" }}>
         <Header />
       </Box>
     </Grid>

@@ -44,7 +44,8 @@ export const aboutMe = {
       company: "Artemis Network",
       role: "Software Engineer",
       description:
-        "Throughout my two years at Artemis Network, a dynamic crypto startup, I played a pivotal role in the development of end-to-end applications using the MERN stack. I was a key player in the company's success, contributing significantly to raising over 135000$ US Dollars through the successful development of MERN stack applications. My expertise includes building UI apps with  React, Flutter, Node.js, MongoDB, Python, Docker, AWS, Azure, and Telegram chatbots and optimizing application performance",
+        "Contributing to the Arcade Gaming Platform and NFT Marketplace at Artemis Network. Designing and implementing robust architectures, building mobile apps, static websites, and various APIs. Leading the development of Telegram chatbots and optimizing application performance. Technologies include React, Flutter, Node.js, MongoDB, Python, Docker, AWS, and Azure.",
+
       duration: "Sep 2021 - Present",
     },
     {
@@ -62,7 +63,7 @@ export const aboutMe = {
       duration: "Nov 2020 - Jan 2021",
     },
     {
-      company: "SC Railway, Vijayawada",
+      company: "SCR, Vijayawada",
       role: "Java J2EE Developer Intern",
       description:
         "Interned at SC Railway, Vijayawada, actively participating in the development of day-to-day features, contributing to codebase refactoring, and playing a crucial role in enhancing the existing system.",
@@ -97,7 +98,7 @@ export const techMe = {
     {
       heading: "Funding Success",
       description:
-        "My journey at Artemis Network has been marked by success. As a key player, I've significantly contributed to raising over 1 Crore in funding through the development of impactful MERN stack applications.",
+        "My journey at Artemis Network has been marked by success. As a key player, I've significantly contributed to raising over 135000$ US Dollars in funding through the development of impactful MERN stack applications.",
     },
   ],
 };

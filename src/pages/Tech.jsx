@@ -34,7 +34,7 @@ export default function Tech() {
             <Box
               bg={`rgba(0,0,0, 0.5)`}
               boxShadow={"dark-lg"}
-              p={4}
+              p={2}
               borderRadius="md"
               key={i}
             >

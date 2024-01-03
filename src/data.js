@@ -41,19 +41,32 @@ export const aboutMe = {
     "Embarking on my professional journey as a Full Stack Developer, I've immersed myself in the MERN stack. From shaping responsive user interfaces with React to orchestrating server-side logic with Node.js and Express.js, my tech odyssey has been an exhilarating ride.",
   content: [
     {
-      title: "Artemis Network - A Crypto Startup",
+      company: "Artemis Network",
+      role: "Software Engineer",
       description:
-        "During my two years at Artemis Network, a dynamic crypto startup, I played a pivotal role in the development of end-to-end applications using the MERN stack. I contributed significantly to raising over 1 Crore through successful MERN stack applications. My expertise includes building UI apps with React, developing APIs with Express.js, and occasional use of Python Flask for specific needs.",
+        "Throughout my two years at Artemis Network, a dynamic crypto startup, I played a pivotal role in the development of end-to-end applications using the MERN stack. I was a key player in the company's success, contributing significantly to raising over 135000$ US Dollars through the successful development of MERN stack applications. My expertise includes building UI apps with  React, Flutter, Node.js, MongoDB, Python, Docker, AWS, Azure, and Telegram chatbots and optimizing application performance",
+      duration: "Sep 2021 - Present",
     },
     {
-      title: "Expanding Technology Stack",
+      company: "AuxDynamics",
+      role: "Co Founder",
       description:
-        "In addition to my primary focus on the MERN stack, I expanded my tech stack to include Spring Boot for Java-based backend development. I explored frontend technologies such as Angular and Vue.js. My hands-on experience with DevOps concepts streamlined the development and deployment processes.",
+        "Co-founded AuxDynamics, leading the team, mentoring interns, conducting code reviews, and approving PRs. Implemented intricate architectures for various products, contributing significantly to the company's growth.",
+      duration: "Oct 2020 - Feb 2021",
     },
     {
-      title: "Mobile App Development with Flutter",
+      company: "CanvasBird",
+      role: "Open Source Developer & Mentor",
       description:
-        "As part of my versatile skill set, I delved into mobile app development using Flutter, ensuring cross-platform compatibility and engaging user experiences. This allowed me to contribute to the diverse technological landscape at Artemis Network.",
+        "Contributed significantly to CanvasBird as an Open Source Developer and Mentor during the WOC 2020 Hackathon. Led the design and implementation of a sophisticated DB-driven File Management System. Conducted code reviews, approved PRs, and provided guidance to students.",
+      duration: "Nov 2020 - Jan 2021",
+    },
+    {
+      company: "SC Railway, Vijayawada",
+      role: "Java J2EE Developer Intern",
+      description:
+        "Interned at SC Railway, Vijayawada, actively participating in the development of day-to-day features, contributing to codebase refactoring, and playing a crucial role in enhancing the existing system.",
+      duration: "Jan 2021 - May 2021",
     },
   ],
 };
@@ -183,7 +196,7 @@ export const skills = {
 export const footerContent = {
   heading: "Get in Touch",
   description:
-    "Ready to embark on the next tech adventure? Let's connect! Feel free to reach out via email (akashmadduru@gmail.com) or phone (+919494535327). Connect with me on [LinkedIn](LinkedIn Link).",
+    "Ready to embark on the next tech adventure? Let's connect! Feel free to reach out",
 };
 
 export const projects = [

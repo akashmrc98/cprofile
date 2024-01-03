@@ -19,7 +19,7 @@ export default function Model3D() {
   }, [actions, names]);
 
   return (
-    <group scale={2.3} ref={group}>
+    <group scale={3} ref={group}>
       <group name="Sketchfab_Scene">
         <primitive object={nodes._rootJoint} />
         <skinnedMesh

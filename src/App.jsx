@@ -6,6 +6,7 @@ import AboutMe from "./pages/AboutMe";
 import Tech from "./pages/Tech";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Tech />
         <Skills />
         <Projects />
+        <Footer />
       </Container>
     </Box>
   );

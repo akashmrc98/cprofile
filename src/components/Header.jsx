@@ -54,8 +54,8 @@ export default function Header() {
         whileInView="visible"
         viewport={{ once: true, }}
         variants={{
-          visible: { y: 0, opacity: 1 },
-          hidden: { y: -66, opacity: 0 },
+          visible: { scale: 1, opacity: 1 },
+          hidden: { scale: 0.8, opacity: 0 },
         }}
         transition={{
           duration: .5,
@@ -73,8 +73,8 @@ export default function Header() {
         whileInView="visible"
         viewport={{ once: true, }}
         variants={{
-          visible: { y: 0, opacity: 1 },
-          hidden: { y: -66, opacity: 0 },
+          visible: { scale: 1, opacity: 1 },
+          hidden: { scale: 0.8, opacity: 0 },
         }}
         transition={{
           delay: 0.11,
@@ -99,8 +99,8 @@ export default function Header() {
             whileInView="visible"
             viewport={{ once: true, }}
             variants={{
-              visible: { x: 0, opacity: 1 },
-              hidden: { x: -66, opacity: 0 },
+              visible: { scale: 1, opacity: 1 },
+              hidden: { scale: 0.8, opacity: 0 },
             }}
             transition={{
               delay: 0.11 * i,

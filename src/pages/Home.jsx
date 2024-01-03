@@ -1,9 +1,12 @@
 /* eslint-disable react/no-unknown-property */
-import { Canvas } from "@react-three/fiber";
 import { Grid, GridItem, Box } from "@chakra-ui/react";
-
 import Header from "../components/Header";
-import Model3D from "../components/Model3D";
+
+// import { Canvas } from "@react-three/fiber";
+// import Model3D from "../components/Model3D";
+
+import Lottie from "lottie-react";
+import akash from "../assets/akash.json";
 
 export default function Home() {
   return (
@@ -17,17 +20,14 @@ export default function Home() {
       <Box display={{ base: "none", lg: "block" }}>
         <Header />
       </Box>
-      <GridItem
-        transform={"translateY(50px)"}
-        h={{ base: "100%", lg: "50%" }}
-        w="100%"
-      >
-        <Canvas>
+      <GridItem h={{ base: "100%", lg: "50%" }} w="100%">
+        <Lottie animationData={akash} loop={true} />
+        {/* <Canvas>
           <pointLight intensity={2} />
           <ambientLight intensity={0.1} />
           <directionalLight color="white" position={[0, 0, 5]} />
           <Model3D />
-        </Canvas>
+        </Canvas> */}
       </GridItem>
       <Box p={{ base: 4 }} display={{ base: "block", lg: "none" }}>
         <Header />

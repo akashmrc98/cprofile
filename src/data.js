@@ -196,7 +196,7 @@ export const skills = {
 export const footerContent = {
   heading: "Get in Touch",
   description:
-    "Ready to embark on the next tech adventure? Let's connect! Feel free to reach out",
+    "I'm always open to new opportunities, collaborations, and engaging discussions. Whether you have a project in mind, want to discuss technology trends, or just want to say hello, feel free to reach out.",
 };
 
 export const projects = [
@@ -239,6 +239,35 @@ export const projects = [
     ],
   },
   {
+    name: "CanvasBird Project",
+    overview:
+      "Contributed to the CanvasBird project, enhancing file management capabilities. Played a key role in implementing features to optimize file organization and access within the CanvasBird platform.",
+    projectGoals: [
+      "CanvasBird: Notion-inspired Efficiency.",
+      "CanvasBird: Streamlining Collaborative Productivity.",
+    ],
+    urls: [
+      {
+        app: "App",
+        url: "https://github.com/Canvasbird/canvasboard-backend.git",
+      },
+    ],
+  },
+  {
+    name: "Online Grocery Store",
+    overview:
+      "Created an Online Grocery Store using the Django framework and Bootstrap. The project focused on providing a convenient platform for selling grocery items online.",
+    techStack: "Django Bootstrap",
+    projectGoals: ["An easy-to-use online platform for selling grocery items."],
+    urls: [
+      {
+        app: "App",
+        url: "https://github.com/akashmrc98/Gstore.git",
+      },
+    ],
+  },
+
+  {
     name: "Arch Linux Desktop Customization",
     overview:
       "Engaged in desktop customization for Arch Linux, utilizing dwm, polybar, and configuration scripts to implement window tiling managers.",
@@ -259,35 +288,6 @@ export const projects = [
       {
         app: "Emacs Config",
         url: "https://github.com/akashmrc98/emacs_config.git",
-      },
-    ],
-  },
-
-  {
-    name: "Online Grocery Store",
-    overview:
-      "Created an Online Grocery Store using the Django framework and Bootstrap. The project focused on providing a convenient platform for selling grocery items online.",
-    techStack: "Django Bootstrap",
-    projectGoals: ["An easy-to-use online platform for selling grocery items."],
-    urls: [
-      {
-        app: "App",
-        url: "https://github.com/akashmrc98/Gstore.git",
-      },
-    ],
-  },
-  {
-    name: "CanvasBird Project",
-    overview:
-      "Contributed to the CanvasBird project, enhancing file management capabilities. Played a key role in implementing features to optimize file organization and access within the CanvasBird platform.",
-    projectGoals: [
-      "CanvasBird: Notion-inspired Efficiency.",
-      "CanvasBird: Streamlining Collaborative Productivity.",
-    ],
-    urls: [
-      {
-        app: "App",
-        url: "https://github.com/Canvasbird/canvasboard-backend.git",
       },
     ],
   },

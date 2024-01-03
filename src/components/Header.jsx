@@ -33,7 +33,7 @@ export default function Header() {
       rowGap={{ base: ".5rem", md: "1rem", lg: "1.25rem" }}
     >
       <Box>
-        <Heading>Hello, {`I'm`}</Heading>
+        <Heading fontFamily={fonts.special}>Hello, {`I'm`}</Heading>
         <Heading fontFamily={fonts.special}>
           <Typewriter
             options={{ loop: true, autoStart: true }}
@@ -66,15 +66,16 @@ export default function Header() {
           damping: 10,
         }}
       >
-        <Heading cus fontSize={{ base: '2xl' }} fontFamily={fonts.cursive}>
+        <Heading cus fontSize={{ base: 'lg', md: "xl", lg: "2xl" }} fontFamily={fonts.cursive}>
           <Highlight
             query={`Full Stack Engineer`}
             styles={{
               cursor: "pointer",
               px: '2', py: '1', borderRadius: "md", bg: colors.p,
               mx: '2',
-              fontFamily: fonts.special,
+              fontFamily: fonts.cursive,
               fontWeight: "bold",
+              fontSize: { base: "xl", md: "2xl", lg: "3xl" },
               color: colors.bg
             }}
           >
@@ -176,6 +177,6 @@ export default function Header() {
           RESUME
         </Button>
       </motion.div>
-    </GridItem>
+    </GridItem >
   );
 }

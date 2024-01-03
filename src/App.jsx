@@ -18,17 +18,17 @@ function App() {
     <Box backgroundColor={colors.bg}>
       <Container
         minW={{
-          base: "100vw",
+          base: "100%",
           md: "90vw",
           lg: "80vw",
-          xl: "75vw",
+          xl: "65vw",
         }}
         className="bg"
         backgroundPosition="center"
         boxShadow="dark-lg"
       >
         <Navbar />
-        <Box px={{ base: 4, lg: 8, xl: 12 }}>
+        <Box px={{ base: 0, lg: 8, }}>
           <Home />
           <Element name="about">
             <AboutMe />

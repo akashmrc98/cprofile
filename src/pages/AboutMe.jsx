@@ -71,7 +71,10 @@ export default function AboutMe() {
         columnGap="3rem"
         rowGap={"2rem"}
       >
-        <GridItem>
+        <GridItem
+          display={"flex"}
+          justifyContent="center"
+          alignItems={"center"}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -92,11 +95,8 @@ export default function AboutMe() {
 
             <Tilt>
               <Image
-                display={"flex"}
-                justifyContent="center"
-                alignItems={"center"}
                 borderRadius={"md"}
-                maxW="320"
+                maxH={{ base: "320", md: "380", lg: "440", xl: "500", }}
                 src={Akash}
               />
             </Tilt>

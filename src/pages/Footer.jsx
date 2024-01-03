@@ -126,12 +126,9 @@ export default function Footer() {
         flat
         linear
       >
-
         <OrbitControls enableRotate={true} enableZoom={false} enableDamping={false}
           enablePan={false}
         />
-
-
         <Model3D />
         <pointLight intensity={1} />
         <ambientLight intensity={1} />

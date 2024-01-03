@@ -51,7 +51,6 @@ export default function Tech() {
           w="100%"
         >
           {techMe.content.map((content, i) => (
-
             <motion.div
               key={i}
               initial="hidden"
@@ -73,7 +72,6 @@ export default function Tech() {
               <Box
                 bg={`rgba(0,0,0, 0.5)`}
                 boxShadow={"dark-lg"}
-                p={2}
                 borderRadius="md"
                 key={i}
               >
@@ -82,7 +80,6 @@ export default function Tech() {
                 <Text fontFamily={fonts.reading}>{content.description}</Text>
               </Box>
             </motion.div>
-
           ))}
         </GridItem>
       </Grid>

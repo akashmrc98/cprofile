@@ -30,7 +30,7 @@ import { LuTextCursor } from "react-icons/lu";
 export const homeData = {
   hello: "Greetings!",
   heading: "AKASH MADDURU",
-  role: '"An Experienced Full Stack Engineer',
+  role: 'An Experienced Full Stack Engineer',
   description:
     " with a passion for transforming concepts into robust digital solutions. My journey over the past two years at Artemis Network has been a thrilling exploration of the dynamic world of software development. I specialize in crafting end-to-end applications that seamlessly integrate cutting-edge technologies, delivering impactful solutions.",
 };
@@ -144,17 +144,17 @@ export const skills = {
       icon: SiFlutter,
     },
     {
-      name: "Web3 JS",
+      name: "Web3",
       icon: SiWeb3Dotjs,
     },
   ],
   backend: [
     {
-      name: "Node JS",
+      name: "Node",
       icon: SiNodedotjs,
     },
     {
-      name: "Express JS",
+      name: "Express",
       icon: SiExpress,
     },
     {

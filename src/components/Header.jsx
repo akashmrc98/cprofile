@@ -26,7 +26,7 @@ export default function Header() {
     >
       <Box>
         <Heading>Hello, {`I'm`}</Heading>
-        <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+        <Heading fontFamily={fonts.special}>
           <Typewriter
             options={{ loop: true, autoStart: true }}
             onInit={(typewriter) => {
@@ -42,12 +42,8 @@ export default function Header() {
           />
         </Heading>
       </Box>
-      <Flex transform={"translateX(-12px)"}>
-        <Image transform={"translateY(-12px)"} maxW="3" src={QuoteO}></Image>
-        <Heading fontSize={{ base: "2xl" }} fontFamily={fonts.cursive}>
-          {homeData.role}
-        </Heading>
-        <Image transform={"translateY(-12px)"} maxW="3" src={QuoteC}></Image>
+      <Flex>
+        <Heading fontFamily={fonts.cursive}>{homeData.role}</Heading>
       </Flex>
       <Text fontFamily={fonts.reading} textAlign="left">
         {homeData.description}

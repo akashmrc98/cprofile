@@ -8,6 +8,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Footer from "./pages/Footer";
 import Navbar from "./components/Navbar";
+import { Element } from "react-scroll";
 
 function App() {
   return (
@@ -26,10 +27,18 @@ function App() {
         <Navbar />
         <Box px={{ base: 4, lg: 8, xl: 12 }}>
           <Home />
-          <AboutMe />
-          <Tech />
-          <Skills />
-          <Projects />
+          <Element name="about">
+            <AboutMe />
+          </Element>
+          <Element name="tech">
+            <Tech />
+          </Element>
+          <Element name="skill">
+            <Skills />
+          </Element>
+          <Element name="project">
+            <Projects />
+          </Element>
           <Footer />
         </Box>
       </Container>

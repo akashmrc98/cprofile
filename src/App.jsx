@@ -7,6 +7,7 @@ import Tech from "./pages/Tech";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Footer from "./pages/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -21,14 +22,16 @@ function App() {
         className="bg"
         backgroundPosition="center"
         boxShadow="dark-lg"
-        px={{ base: 4, lg: 8, xl: 12 }}
       >
-        <Home />
-        <AboutMe />
-        <Tech />
-        <Skills />
-        <Projects />
-        <Footer />
+        <Navbar />
+        <Box px={{ base: 4, lg: 8, xl: 12 }}>
+          <Home />
+          <AboutMe />
+          <Tech />
+          <Skills />
+          <Projects />
+          <Footer />
+        </Box>
       </Container>
     </Box>
   );

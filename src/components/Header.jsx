@@ -11,9 +11,6 @@ import {
 import { fonts } from "../config/fonts";
 import { homeData, socialData } from "../data";
 
-import QuoteC from "../assets/quote_c.svg";
-import QuoteO from "../assets/quote_o.svg";
-
 import Typewriter from "typewriter-effect";
 import { colors } from "../config/colors";
 

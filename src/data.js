@@ -20,9 +20,9 @@ import {
   SiGit,
   SiDocker,
   SiSpringboot,
-  SiFlask,
   SiWeb3Dotjs,
   SiOpenjdk,
+  SiLinux,
 } from "react-icons/si";
 
 import { LuTextCursor } from "react-icons/lu";
@@ -162,10 +162,6 @@ export const skills = {
       icon: SiSpringboot,
     },
     {
-      name: "Flask",
-      icon: SiFlask,
-    },
-    {
       name: "MongoDB",
       icon: SiMongodb,
     },
@@ -179,6 +175,7 @@ export const skills = {
       name: "Git",
       icon: SiGit,
     },
+    { name: "Linux", icon: SiLinux },
     {
       name: "Docker",
       icon: SiDocker,

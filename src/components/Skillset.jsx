@@ -26,7 +26,6 @@ export default function SkillSet(props) {
             boxShadow={`0px 0px 4px ${colors.fg}`}
             m={4}
             display={"flex"}
-            olumnGap={"1rem"}
             key={i}
             columnGap="1rem"
             alignItems="center"

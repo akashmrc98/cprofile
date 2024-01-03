@@ -19,7 +19,6 @@ export default function Header() {
     <GridItem
       display={"grid"}
       rowGap={{ base: ".5rem", md: "1rem", lg: "1.25rem" }}
-      p={2}
     >
       <Box>
         <Heading>Hello, {`I'm`}</Heading>

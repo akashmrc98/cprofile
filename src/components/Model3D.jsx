@@ -5,7 +5,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 export default function Model3D() {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "/public/.glb/drone-transformed.glb"
+    "../assets/.glb/drone-transformed.glb"
   );
   const { actions, names } = useAnimations(animations, group);
 
@@ -35,4 +35,4 @@ export default function Model3D() {
   );
 }
 
-useGLTF.preload("/public/.glb/drone-transformed.glb");
+useGLTF.preload("../assets/.glb/drone-transformed.glb");

@@ -1,7 +1,7 @@
 import { Box, Container } from "@chakra-ui/react";
 import { colors } from "./config/colors";
+
 import Home from "./pages/Home";
-import BG from "./assets/bg.svg";
 import AboutMe from "./pages/AboutMe";
 import Tech from "./pages/Tech";
 import Skills from "./pages/Skills";
@@ -18,10 +18,8 @@ function App() {
           lg: "80vw",
           xl: "75vw",
         }}
-        backgroundImage={BG}
+        className="bg"
         backgroundPosition="center"
-        backgroundRepeat={"no-repeat"}
-        backgroundSize="cover"
         boxShadow="dark-lg"
         px={{ base: 4, lg: 8, xl: 12 }}
       >

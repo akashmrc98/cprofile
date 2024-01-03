@@ -31,7 +31,13 @@ export default function Tech() {
           w="100%"
         >
           {techMe.content.map((content, i) => (
-            <Box boxShadow={"dark-lg"} p={4} borderRadius="md" key={i}>
+            <Box
+              bg={`rgba(0,0,0, 0.5)`}
+              boxShadow={"dark-lg"}
+              p={4}
+              borderRadius="md"
+              key={i}
+            >
               <Heading fontFamily={fonts.cursive}>{content.heading}</Heading>
               <Divider my={2} />
               <Text fontFamily={fonts.reading}>{content.description}</Text>

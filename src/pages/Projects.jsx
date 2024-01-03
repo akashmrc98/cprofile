@@ -48,6 +48,7 @@ export default function Projects() {
           {projects.map((project, i) => (
             <Box
               boxShadow={`0px 0px 4px ${colors.fg}`}
+              bg={`rgba(0,0,0, 0.5)`}
               p={4}
               borderRadius="md"
               key={i}

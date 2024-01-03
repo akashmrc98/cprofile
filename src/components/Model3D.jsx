@@ -4,7 +4,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 
 export default function Model3D() {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("public/robot.glb");
+  const { nodes, materials, animations } = useGLTF("/robot-transformed.glb");
   const { actions, names } = useAnimations(animations, group);
 
   useEffect(() => {

@@ -3,14 +3,32 @@ import SkillSet from "../components/Skillset";
 
 import { fonts } from "../config/fonts";
 import { skills } from "../data";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
     <Box py={12}>
       <Grid rowGap={"1rem"}>
-        <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
-          Skills
-        </Heading>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, }}
+          variants={{
+            visible: { y: 0, opacity: 1 },
+            hidden: { y: -66, opacity: 0 },
+          }}
+          transition={{
+            duration: .5,
+            bounce: 60,
+            type: "spring",
+            stiffness: 80,
+            damping: 10,
+          }}
+        >
+          <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+            Skills
+          </Heading>
+        </motion.div>
       </Grid>
       <Divider my={4}></Divider>
       <Grid

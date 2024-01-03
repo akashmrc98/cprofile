@@ -8,6 +8,9 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Footer from "./pages/Footer";
 import Navbar from "./components/Navbar";
+
+
+
 import { Element } from "react-scroll";
 
 function App() {

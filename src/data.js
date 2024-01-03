@@ -1,5 +1,5 @@
 import Github from "./assets/socials/github.png";
-import Instagrap from "./assets/socials/instagram.png";
+import Instagram from "./assets/socials/instagram.png";
 import LinkedIn from "./assets/socials/linkedin.png";
 import Twitter from "./assets/socials/twitter.png";
 
@@ -301,11 +301,11 @@ export const socialData = [
     icon: Github,
   },
   {
-    url: "",
+    url: "https://twitter.com/akash2rockzzz",
     icon: Twitter,
   },
   {
-    url: "",
-    icon: Instagrap,
+    url: "https://www.instagram.com/shanks98m/",
+    icon: Instagram,
   },
 ];

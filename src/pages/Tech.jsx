@@ -2,14 +2,34 @@ import { Grid, GridItem, Box, Text, Heading, Divider } from "@chakra-ui/react";
 
 import { fonts } from "../config/fonts";
 import { techMe } from "../data";
+import { motion } from "framer-motion";
 
 export default function Tech() {
   return (
     <Box py={12}>
       <Grid rowGap={"1rem"}>
-        <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
-          {techMe.heading}
-        </Heading>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, }}
+          variants={{
+            visible: { y: 0, opacity: 1 },
+            hidden: { y: -66, opacity: 0 },
+          }}
+          transition={{
+            delay: .33,
+            duration: .5,
+            bounce: 60,
+            type: "spring",
+            stiffness: 80,
+            damping: 10,
+          }}
+        >
+
+          <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+            {techMe.heading}
+          </Heading>
+        </motion.div>
       </Grid>
       <Divider my={4}></Divider>
       <Grid
@@ -31,17 +51,38 @@ export default function Tech() {
           w="100%"
         >
           {techMe.content.map((content, i) => (
-            <Box
-              bg={`rgba(0,0,0, 0.5)`}
-              boxShadow={"dark-lg"}
-              p={2}
-              borderRadius="md"
+
+            <motion.div
               key={i}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, }}
+              variants={{
+                visible: { y: 0, opacity: 1 },
+                hidden: { y: -66, opacity: 0 },
+              }}
+              transition={{
+                delay: .11 * i,
+                duration: .5,
+                bounce: 60,
+                type: "spring",
+                stiffness: 80,
+                damping: 10,
+              }}
             >
-              <Heading fontFamily={fonts.cursive}>{content.heading}</Heading>
-              <Divider my={2} />
-              <Text fontFamily={fonts.reading}>{content.description}</Text>
-            </Box>
+              <Box
+                bg={`rgba(0,0,0, 0.5)`}
+                boxShadow={"dark-lg"}
+                p={2}
+                borderRadius="md"
+                key={i}
+              >
+                <Heading fontFamily={fonts.cursive}>{content.heading}</Heading>
+                <Divider my={2} />
+                <Text fontFamily={fonts.reading}>{content.description}</Text>
+              </Box>
+            </motion.div>
+
           ))}
         </GridItem>
       </Grid>

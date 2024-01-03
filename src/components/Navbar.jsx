@@ -14,6 +14,7 @@ import {
 	useDisclosure,
 	Grid,
 } from "@chakra-ui/react";
+import { motion } from 'framer-motion'
 import { useRef } from "react";
 import { RiMenuFoldLine } from "react-icons/ri";
 import { Link } from "react-scroll";
@@ -59,12 +60,12 @@ export default function Navbar() {
 									onClick={onClose}
 								>
 									<Button
-									
-									w="100%"
-								display={"flex"}
-								alignItems="center"
-								justifyContent={"space-between"}
-								columnGap="1rem"
+
+										w="100%"
+										display={"flex"}
+										alignItems="center"
+										justifyContent={"space-between"}
+										columnGap="1rem"
 										mt={{ base: 4, md: 0 }}
 										fontWeight={"bold"}
 										color={colors.p}
@@ -72,7 +73,7 @@ export default function Navbar() {
 										variant={"outline"}
 										size={{ base: "lg" }}
 									>
-										<Icon  as={n.icon} color={colors.s} />
+										<Icon as={n.icon} color={colors.s} />
 										{n.name}
 
 									</Button>
@@ -113,37 +114,73 @@ export default function Navbar() {
 				display={"flex"}
 				justifyContent="space-between"
 			>
-				<Heading fontFamily={fonts.special}>{`<AKASH MADDURU/> `}</Heading>
+
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, }}
+					variants={{
+						visible: { scale: 1 },
+						hidden: { scale: 0.66 },
+					}}
+
+					transition={{
+						duration: .5,
+						bounce: 60,
+						type: "spring",
+						stiffness: 80,
+						damping: 10,
+					}}
+				>
+					<Heading fontFamily={fonts.special}>{`<AKASH MADDURU/> `}</Heading>
+				</motion.div>
 				<Flex
 					alignItems={"center"}
 					display={{ base: "none", lg: "flex" }}
 					columnGap={"1rem"}
 				>
 					{navbarItems.map((n, i) => (
-
-						<Link activeClass="active"
-							to={n.url}
-							spy={true}
-							smooth={true}
-							spyThrottle={500}
+						<motion.div
 							key={i}
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true, }}
+							variants={{
+								visible: { scale: 1 },
+								hidden: { scale: 0.66 },
+							}}
+							transition={{
+								delay: .11 * i,
+								duration: .5,
+								bounce: 60,
+								type: "spring",
+								stiffness: 80,
+								damping: 10,
+							}}
 						>
-							<Button
-								display={"flex"}
-								alignItems="center"
-								justifyContent={"center"}
-								columnGap="1rem"
-								mt={{ base: 4, md: 0 }}
-								fontWeight={"bold"}
-								color={colors.p}
-								_hover={{ color: colors.bg, bg: colors.p }}
-								variant={"outline"}
-								size={{ base: "sm" }}
+							<Link activeClass="active"
+								to={n.url}
+								spy={true}
+								smooth={true}
+								spyThrottle={500}
 							>
-								<Icon  as={n.icon} color={colors.s} />
-								{n.name}
-							</Button>
-						</Link>
+								<Button
+									display={"flex"}
+									alignItems="center"
+									justifyContent={"center"}
+									columnGap="1rem"
+									mt={{ base: 4, md: 0 }}
+									fontWeight={"bold"}
+									color={colors.p}
+									_hover={{ color: colors.bg, bg: colors.p }}
+									variant={"outline"}
+									size={{ base: "sm" }}
+								>
+									<Icon as={n.icon} color={colors.s} />
+									{n.name}
+								</Button>
+							</Link>
+						</motion.div>
 					))}
 				</Flex>
 
@@ -172,12 +209,12 @@ const navbarItems = [
 	{
 		name: "Technicial",
 		url: "tech",
-		icon: FaNewspaper 
+		icon: FaNewspaper
 	},
 	{
 		name: "Skill",
 		url: "skill",
-		icon: FaBook 
+		icon: FaBook
 	},
 	{
 		name: "Projects",

@@ -5,17 +5,18 @@ import {
   Flex,
   GridItem,
   Heading,
-  Highlight,
   Image,
   Link,
   Text,
 } from "@chakra-ui/react";
 import { fonts } from "../config/fonts";
-import { homeData, socialData } from "../data";
 import { motion } from "framer-motion";
+import { colors } from "../config/colors";
+
+import { homeData, socialData } from "../data";
 
 import Typewriter from "typewriter-effect";
-import { colors } from "../config/colors";
+import Tilt from 'react-parallax-tilt'
 
 export default function Header() {
   function downloadResume() {
@@ -35,19 +36,7 @@ export default function Header() {
       <Box>
         <Heading fontFamily={fonts.special}>Hello, {`I'm`}</Heading>
         <Heading fontFamily={fonts.special}>
-          <Typewriter
-            options={{ loop: true, autoStart: true }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("AKASH ")
-                .pauseFor(1500)
-                .typeString("MADDURU")
-                .pauseFor(3500)
-                .start()
-                .deleteChars(7)
-                .typeString("MADDURU");
-            }}
-          />
+          AKASH MADDURU
         </Heading>
       </Box>
       <motion.div
@@ -66,22 +55,41 @@ export default function Header() {
           damping: 10,
         }}
       >
-        <Heading cus fontSize={{ base: 'lg', md: "xl", lg: "2xl" }} fontFamily={fonts.cursive}>
-          <Highlight
-            query={`Full Stack Engineer`}
-            styles={{
-              cursor: "pointer",
-              px: '2', py: '1', borderRadius: "md", bg: colors.p,
-              mx: '2',
-              fontFamily: fonts.cursive,
-              fontWeight: "bold",
-              fontSize: { base: "xl", md: "2xl", lg: "3xl" },
-              color: colors.bg
-            }}
-          >
-            {homeData.role}
-          </Highlight>
-        </Heading>
+        <Flex columnGap={".5rem"} alignItems={"center"} justifyContent="flex-start">
+          <Heading cus fontSize={{ base: 'lg', md: "xl", lg: "2xl" }} fontFamily={fonts.cursive}>
+            {homeData.role.replace("Full Stack Engineer", "")}
+          </Heading>
+          <Tilt>
+            <Heading
+              query={`Full Stack Engineer`}
+              cursor={"pointer"}
+              px={'2'}
+              py={'1'}
+              borderRadius="md"
+              bg={colors.p}
+              mx='2'
+              fontFamily={fonts.special}
+              fontWeight="bold"
+              fontSize={{ base: "xl", md: "2xl" }}
+              color={colors.bg}
+            >
+              <Typewriter
+                options={{ loop: true, autoStart: true }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Fullstack ")
+                    .pauseFor(1500)
+                    .typeString("Engineer")
+                    .pauseFor(3500)
+                    .start()
+                    .deleteChars(8)
+                    .typeString("Engineer");
+                }}
+              />
+
+            </Heading>
+          </Tilt>
+        </Flex>
       </motion.div>
 
       <motion.div

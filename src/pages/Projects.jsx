@@ -12,13 +12,13 @@ import {
 	Link,
 } from "@chakra-ui/react";
 
-import { fonts } from "../config/fonts";
 import { projects } from "../data";
-
-import { colors } from "../config/colors";
-
-import { SiBreaker, SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
+import { fonts } from "../config/fonts";
+import { colors } from '../config/colors'
+import { SiGithub } from "react-icons/si";
+import { FaRegDotCircle } from "react-icons/fa";
+
 
 export default function Projects() {
 	return (
@@ -55,8 +55,7 @@ export default function Projects() {
 				<GridItem
 					gridTemplateColumns={{
 						base: "1fr",
-						md: "1fr",
-						lg: "1fr 1fr",
+						lg: "1fr 1fr"
 					}}
 					display={"grid"}
 					rowGap="1rem"
@@ -83,39 +82,38 @@ export default function Projects() {
 							key={i}
 						>
 							<Box
-								boxShadow={`0px 0px 4px ${colors.fg}`}
-								bg={`rgba(0,0,0, 0.5)`}
-								p={4}
-								borderRadius="md"
 								key={i}
 							>
-								<Heading fontFamily={fonts.cursive}>{project.name}</Heading>
-								<Divider my={2} />
-								<Text fontFamily={fonts.reading}>{project.overview}</Text>
-								<Divider my={2} />
-								<List>
-									{project.projectGoals.map((goal, j) => (
-										<ListItem fontFamily={fonts.reading} key={j}>
-											<ListIcon as={SiBreaker} color="white" />
-											{goal}
-										</ListItem>
-									))}
-								</List>
-								<Divider my={2} />
-								<Box>
-									{project.urls.map((url, s) => (
-										<Link href={url.url} key={s} target="_blank">
-											<Box
-												display={"flex"}
-												columnGap="1rem"
-												alignItems={"center"}
-												key={s}
-											>
-												<Icon as={SiGithub} />
-												<Text cursor={"pointer"}>{url.app}</Text>
-											</Box>
-										</Link>
-									))}
+								<Heading my={2} fontFamily={fonts.cursive}>{project.name}</Heading>
+								<Box p={3} borderRadius="md" boxShadow={`0px 0px 4px ${colors.p}`}>
+									<Text
+										fontSize={{ base: "xs", md: "sm", lg: "md" }}
+										fontFamily={fonts.reading}>{project.overview}</Text>
+									<Divider my={2} />
+									<List>
+										{project.projectGoals.map((goal, j) => (
+											<ListItem fontSize={{ base: "xs", md: "sm", }} fontFamily={fonts.reading} key={j}>
+												<ListIcon as={FaRegDotCircle} color="white" />
+												{goal}
+											</ListItem>
+										))}
+									</List>
+									<Divider my={2} />
+									<Box>
+										{project.urls.map((url, s) => (
+											<Link href={url.url} key={s} target="_blank">
+												<Box
+													display={"flex"}
+													columnGap="1rem"
+													alignItems={"center"}
+													key={s}
+												>
+													<Icon as={SiGithub} />
+													<Text cursor={"pointer"}>{url.app}</Text>
+												</Box>
+											</Link>
+										))}
+									</Box>
 								</Box>
 							</Box>
 						</motion.div>

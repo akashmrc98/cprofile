@@ -3,6 +3,7 @@ import { Grid, GridItem, Box, Text, Heading, Divider } from "@chakra-ui/react";
 import { fonts } from "../config/fonts";
 import { techMe } from "../data";
 import { motion } from "framer-motion";
+import { colors } from "../config/colors";
 
 export default function Tech() {
   return (
@@ -43,7 +44,6 @@ export default function Tech() {
             base: "1fr",
             md: "1fr",
             lg: "1fr 1fr",
-            xl: "1fr 1fr 1fr",
           }}
           display={"grid"}
           rowGap="1rem"
@@ -71,8 +71,10 @@ export default function Tech() {
             >
               <Box
                 bg={`rgba(0,0,0, 0.5)`}
-                boxShadow={"dark-lg"}
                 borderRadius="md"
+                boxShadow={`0px 0px 2px ${colors.s}`}
+                p={3}
+                h="100%"
                 key={i}
               >
                 <Heading fontFamily={fonts.cursive}>{content.heading}</Heading>

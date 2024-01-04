@@ -57,7 +57,7 @@ export default function SkillSet(props) {
             }}
             key={i}>
             <Box bg={`rgba(0,0,0, 0.5)`}
-              boxShadow={`0px 0px 4px ${colors.fg}`}
+              boxShadow={`0px 0px 4px ${colors.s}`}
               m={2}
               display={"flex"}
               key={i}

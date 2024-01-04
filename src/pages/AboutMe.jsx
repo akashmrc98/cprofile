@@ -20,7 +20,7 @@ import Tilt from 'react-parallax-tilt';
 
 export default function AboutMe() {
   return (
-    <Box px={2} py={12}>
+    <Box py={12}>
       <Grid rowGap={"1rem"}>
         <motion.div
           initial="hidden"

@@ -134,8 +134,7 @@ export default function Footer() {
         <ambientLight intensity={1} />
         <directionalLight position={[24, 32, 10]} />
       </Canvas>
-      <Divider />
-      <Flex my={2} justifyContent={"flex-end"}>
+      <Flex my={2} justifyContent={"center"}>
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -152,9 +151,9 @@ export default function Footer() {
             damping: 10,
           }}
         >
-          <Text fontFamily={fonts.special} fontWeight="bold">
-            © 2024 AKASH MADDURU. ALL RIGHTS RESERVED
-          </Text>
+          <Heading fontSize={{ base: 'sm', md: "md", lg: 'lg', xl: 'xl' }} fontFamily={fonts.special} fontWeight="bold">
+            © 2024 Akash Madduru. All Rights Reserved
+          </Heading>
         </motion.div>
       </Flex>
     </Box>

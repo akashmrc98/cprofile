@@ -1,5 +1,6 @@
 export const fonts = {
-  cursive: "'Cookie', cursive",
+  cursive: "'Lobster Two', cursive",
   special: "'Londrina Outline', sans-serif",
   reading: "'Josefin Sans', sans-serif",
 };
+

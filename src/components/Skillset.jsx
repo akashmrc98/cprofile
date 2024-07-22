@@ -31,7 +31,7 @@ export default function SkillSet(props) {
           damping: 10,
         }}
       >
-        <Heading fontFamily={fonts.cursive}>{props.name}</Heading>
+        <Heading color={colors.h} fontFamily={fonts.cursive}>{props.name}</Heading>
       </motion.div>
       <Divider mt={4} mb={2} />
       <GridItem

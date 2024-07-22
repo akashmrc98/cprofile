@@ -56,7 +56,7 @@ export default function Header() {
         }}
       >
         <Flex columnGap={".5rem"} alignItems={"center"} justifyContent="flex-start">
-          <Heading cus fontSize={{ base: 'lg', md: "xl", lg: "2xl" }} fontFamily={fonts.cursive}>
+          <Heading color={colors.h} cus fontSize={{ base: 'lg', md: "xl", lg: "2xl" }} fontFamily={fonts.cursive}>
             {homeData.role.replace("Full Stack Engineer", "")}
           </Heading>
           <Tilt>
@@ -65,13 +65,14 @@ export default function Header() {
               cursor={"pointer"}
               px={'2'}
               py={'1'}
+              boxShadow={`0px 0px 2px ${colors.h}`}
               borderRadius="md"
-              bg={colors.p}
+              bg={colors.bg}
               mx='2'
               fontFamily={fonts.special}
               fontWeight="bold"
               fontSize={{ base: "xl", md: "2xl" }}
-              color={colors.bg}
+              color={colors.h}
             >
               <Typewriter
                 options={{ loop: true, autoStart: true }}
@@ -176,8 +177,8 @@ export default function Header() {
         <Button
           mt={{ base: 4, md: 0 }}
           fontWeight={"bold"}
-          color={colors.p}
-          _hover={{ color: colors.bg, bg: colors.p }}
+          color={colors.h}
+          _hover={{ bg: colors.p }}
           variant={"outline"}
           size={{ base: "sm", xl: "lg" }}
           onClick={downloadResume}

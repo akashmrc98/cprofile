@@ -41,7 +41,7 @@ export default function Footer() {
           }}
         >
 
-          <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+          <Heading color={colors.h} fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
             {footerContent.heading}
           </Heading>
         </motion.div>
@@ -112,7 +112,7 @@ export default function Footer() {
       </Flex>
       <Canvas
         style={{
-          backgroundColor: colors.bg,
+          backgroundColor: colors.h,
           borderRadius: "1rem",
           boxShadow: `0px 0px 4px ${colors.fg}`,
           margin: "2rem 0",

@@ -27,7 +27,7 @@ export default function Tech() {
           }}
         >
 
-          <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+          <Heading color={colors.h} fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
             {techMe.heading}
           </Heading>
         </motion.div>
@@ -77,7 +77,7 @@ export default function Tech() {
                 h="100%"
                 key={i}
               >
-                <Heading fontFamily={fonts.cursive}>{content.heading}</Heading>
+                <Heading color={colors.h} fontFamily={fonts.cursive}>{content.heading}</Heading>
                 <Divider my={2} />
                 <Text fontFamily={fonts.reading}>{content.description}</Text>
               </Box>

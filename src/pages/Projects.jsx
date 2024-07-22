@@ -40,7 +40,7 @@ export default function Projects() {
 						damping: 10,
 					}}
 				>
-					<Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+					<Heading color={colors.h} fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
 						Notable Projects
 					</Heading>
 				</motion.div>
@@ -84,7 +84,7 @@ export default function Projects() {
 							<Box
 								key={i}
 							>
-								<Heading my={2} fontFamily={fonts.cursive}>{project.name}</Heading>
+								<Heading color={colors.h} my={2} fontFamily={fonts.cursive}>{project.name}</Heading>
 								<Box p={3} borderRadius="md" boxShadow={`0px 0px 4px ${colors.p}`}>
 									<Text
 										fontSize={{ base: "xs", md: "sm", lg: "md" }}

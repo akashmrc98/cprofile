@@ -3,5 +3,5 @@ export const colors = {
   fg: "#31304D",
   p: "#F0ECE5",
   s: "#B6BBC4",
-  h: "#F99417",
+  h: "#A3FFD6",
 };

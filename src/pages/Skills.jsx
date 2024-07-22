@@ -4,6 +4,7 @@ import SkillSet from "../components/Skillset";
 import { fonts } from "../config/fonts";
 import { skills } from "../data";
 import { motion } from "framer-motion";
+import { colors } from "../config/colors";
 
 export default function Skills() {
   return (
@@ -25,7 +26,7 @@ export default function Skills() {
             damping: 10,
           }}
         >
-          <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+          <Heading color={colors.h} fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
             Skills
           </Heading>
         </motion.div>

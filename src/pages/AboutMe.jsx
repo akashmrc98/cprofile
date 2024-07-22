@@ -37,7 +37,7 @@ export default function AboutMe() {
             damping: 10,
           }}
         >
-          <Heading fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
+          <Heading color={colors.h} fontSize={{ base: "5xl" }} fontFamily={fonts.special}>
             {aboutMe.heading}
           </Heading>
         </motion.div>
@@ -122,7 +122,7 @@ export default function AboutMe() {
             >
               <Box key={i}>
                 <Flex alignItems={"center"} columnGap="1rem">
-                  <Heading fontFamily={fonts.cursive}>
+                  <Heading color={colors.h} fontFamily={fonts.cursive}>
                     {content.company}
                   </Heading>
                   <Text

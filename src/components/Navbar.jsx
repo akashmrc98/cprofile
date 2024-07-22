@@ -41,7 +41,7 @@ export default function Navbar() {
 				<DrawerOverlay />
 				<DrawerContent bg={colors.bg} className="bg">
 					<DrawerHeader>
-						<Heading fontFamily={fonts.special}>{`<AKASH MADDURU/> `}</Heading>
+						<Heading color={colors.h} fontFamily={fonts.special}>{`<AKASH MADDURU/> `}</Heading>
 					</DrawerHeader>
 
 					<DrawerBody>
@@ -132,7 +132,7 @@ export default function Navbar() {
 						damping: 10,
 					}}
 				>
-					<Heading fontFamily={fonts.special}>{`<AKASH MADDURU/> `}</Heading>
+					<Heading color={colors.h} fontFamily={fonts.special}>{`<AKASH MADDURU/> `}</Heading>
 				</motion.div>
 				<Flex
 					alignItems={"center"}

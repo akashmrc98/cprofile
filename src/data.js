@@ -30,7 +30,7 @@ import { LuTextCursor } from "react-icons/lu";
 export const homeData = {
   hello: "Greetings!",
   heading: "AKASH MADDURU",
-  role: 'An Experienced Full Stack Engineer',
+  role: "An Experienced Full Stack Engineer",
   description:
     " with a passion for transforming concepts into robust digital solutions. My journey over the past two years at Artemis Network has been a thrilling exploration of the dynamic world of software development. I specialize in crafting end-to-end applications that seamlessly integrate cutting-edge technologies, delivering impactful solutions.",
 };
@@ -41,12 +41,19 @@ export const aboutMe = {
     "Embarking on my professional journey as a Full Stack Developer, I've immersed myself in the MERN stack. From shaping responsive user interfaces with React to orchestrating server-side logic with Node.js and Express.js, my tech odyssey has been an exhilarating ride.",
   content: [
     {
+      company: "Axlr Data",
+      role: "Full Stack Developer",
+      description:
+        "As a Backend Lead at Axlr Data, I am responsible for driving the development and optimization of backend systems while occasionally contributing to frontend tasks.",
+      duration: "March 2024 - Current",
+    },
+    {
       company: "Artemis Network",
       role: "Software Engineer",
       description:
         "Contributing to the Arcade Gaming Platform and NFT Marketplace at Artemis Network. Designing and implementing robust architectures, building mobile apps, static websites, and various APIs. Leading the development of Telegram chatbots and optimizing application performance. Technologies include React, Flutter, Node.js, MongoDB, Python, Docker, AWS, and Azure.",
 
-      duration: "Sep 2021 - Present",
+      duration: "Sep 2021 - Feb 2024",
     },
     {
       company: "AuxDynamics",

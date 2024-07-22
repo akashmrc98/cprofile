@@ -15,8 +15,7 @@ import { colors } from "../config/colors";
 import { motion } from "framer-motion";
 
 import Akash from "../assets/akash.jpeg";
-import Tilt from 'react-parallax-tilt';
-
+import Tilt from "react-parallax-tilt";
 
 export default function AboutMe() {
   return (
@@ -25,13 +24,13 @@ export default function AboutMe() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, }}
+          viewport={{ once: true }}
           variants={{
             visible: { y: 0, opacity: 1 },
             hidden: { y: 66, opacity: 0 },
           }}
           transition={{
-            duration: .5,
+            duration: 0.5,
             bounce: 60,
             type: "spring",
             stiffness: 80,
@@ -45,21 +44,20 @@ export default function AboutMe() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, }}
+          viewport={{ once: true }}
           variants={{
             visible: { y: 0, opacity: 1 },
             hidden: { y: 66, opacity: 0 },
           }}
           transition={{
             delay: 0.33,
-            duration: .5,
+            duration: 0.5,
             bounce: 60,
             type: "spring",
             stiffness: 80,
             damping: 10,
           }}
         >
-
           <Text fontFamily={fonts.reading}>{aboutMe.description}</Text>
         </motion.div>
       </Grid>
@@ -74,35 +72,33 @@ export default function AboutMe() {
         <GridItem
           display={"flex"}
           justifyContent="center"
-          alignItems={"center"}>
+          alignItems={"center"}
+        >
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, }}
+            viewport={{ once: true }}
             variants={{
               visible: { x: 0, opacity: 1 },
               hidden: { x: -66, opacity: 0 },
             }}
             transition={{
               delay: 0.33,
-              duration: .5,
+              duration: 0.5,
               bounce: 60,
               type: "spring",
               stiffness: 80,
               damping: 10,
             }}
           >
-
             <Tilt>
               <Image
                 borderRadius={"md"}
-                maxH={{ base: "320", md: "380", lg: "440", xl: "500", }}
+                maxH={{ base: "320", md: "380", lg: "440", xl: "500" }}
                 src={Akash}
               />
             </Tilt>
           </motion.div>
-
-
         </GridItem>
         <GridItem display={"grid"} rowGap="1rem" w="100%">
           {aboutMe.content.map((content, i) => (
@@ -110,28 +106,29 @@ export default function AboutMe() {
               key={i}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, }}
+              viewport={{ once: true }}
               variants={{
                 visible: { x: 0, opacity: 1 },
                 hidden: { x: 66, opacity: 0 },
               }}
               transition={{
                 delay: 0.33 * i,
-                duration: .5,
+                duration: 0.5,
                 bounce: 60,
                 type: "spring",
                 stiffness: 80,
                 damping: 10,
               }}
             >
-
               <Box key={i}>
                 <Flex alignItems={"center"} columnGap="1rem">
-                  <Heading fontFamily={fonts.cursive}>{content.company}</Heading>
+                  <Heading fontFamily={fonts.cursive}>
+                    {content.company}
+                  </Heading>
                   <Text
                     fontWeight={"bold"}
-                    color={colors.p}
-                    fontFamily={fonts.special}
+                    color={"white"}
+                    fontFamily={fonts.reading}
                   >
                     ( {content.duration} )
                   </Text>

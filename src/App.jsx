@@ -15,6 +15,7 @@ import { Element } from "react-scroll";
 import Akash from "./assets/akash.jpeg";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import MovingBox from './components/MovingBox'
 
 function App() {
 	return (
@@ -29,7 +30,8 @@ function App() {
 				backgroundPosition="center"
 			>
 				<Navbar />
-				<Box px={{ base: 0, lg: 8, }}>
+				<Box className="scroll-container" px={{ base: 0, lg: 8, }}>
+					<MovingBox />
 					<Home />
 					{/* <Element name="tech">
 						<Tech />

@@ -1,8 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 
-import { Canvas } from "@react-three/fiber";
-import Model3D from "../components/Model3D";
-
 import {
 	Grid,
 	Box,
@@ -18,7 +15,6 @@ import { fonts } from "../config/fonts";
 import { footerContent, socialData } from "../data";
 import { colors } from "../config/colors";
 import { motion } from "framer-motion";
-import { OrbitControls } from "@react-three/drei";
 
 export default function Footer() {
 	return (

@@ -128,8 +128,9 @@ export default function AboutMe() {
 									className="card_bg"
 								>
 									<List>
-										{content.highlights.map((highlight) =>
+										{content.highlights.map((highlight, l) =>
 											<ListItem
+												key={l}
 												textAlign={"left"}
 												display={"inline"}
 												fontFamily={fonts.reading}>

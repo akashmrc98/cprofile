@@ -24,8 +24,6 @@ import { fonts } from "../config/fonts";
 import { FaTasks, FaNewspaper, FaUser, FaBook } from "react-icons/fa";
 
 
-
-
 export default function Navbar() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -39,7 +37,7 @@ export default function Navbar() {
 				finalFocusRef={btnRef}
 			>
 				<DrawerOverlay />
-				<DrawerContent bg={colors.bg} className="bg">
+				<DrawerContent className="bg">
 					<DrawerHeader>
 						<Heading color={colors.h} fontFamily={fonts.special}>{`<AKASH MADDURU/> `}</Heading>
 					</DrawerHeader>
@@ -58,6 +56,7 @@ export default function Navbar() {
 									spy={true}
 									smooth={true}
 									onClick={onClose}
+									style={{ fontFamily: fonts.reading }}
 								>
 									<Button
 
@@ -69,11 +68,11 @@ export default function Navbar() {
 										mt={{ base: 4, md: 0 }}
 										fontWeight={"bold"}
 										color={colors.p}
-										_hover={{ color: colors.bg, bg: colors.p }}
+										_hover={{ color: colors.h, bg: colors.p }}
 										variant={"outline"}
 										size={{ base: "lg" }}
 									>
-										<Icon as={n.icon} color={colors.s} />
+										<Icon as={n.icon} color={colors.h} />
 										{n.name}
 
 									</Button>
@@ -88,7 +87,7 @@ export default function Navbar() {
 							mt={{ base: 4, md: 0 }}
 							fontWeight={"bold"}
 							color={colors.p}
-							_hover={{ color: colors.bg, bg: colors.p }}
+							_hover={{ color: colors.h, bg: colors.p }}
 							variant={"outline"}
 							size={{ base: "sm" }}
 							onClick={onClose}
@@ -107,14 +106,12 @@ export default function Navbar() {
 			rowGap={{ base: ".5rem", md: "1rem", lg: "1.25rem" }}
 			py={4}
 			minH="10vh"
-			boxShadow={`6px 6px 12px ${colors.bg}`}
 		>
 			<Box
 				alignItems={"center"}
 				display={"flex"}
 				justifyContent="space-between"
 			>
-
 				<motion.div
 					initial="hidden"
 					whileInView="visible"
@@ -163,6 +160,7 @@ export default function Navbar() {
 								spy={true}
 								smooth={true}
 								spyThrottle={500}
+								style={{ fontFamily: fonts.reading }}
 							>
 								<Button
 									display={"flex"}
@@ -172,11 +170,11 @@ export default function Navbar() {
 									mt={{ base: 4, md: 0 }}
 									fontWeight={"bold"}
 									color={colors.p}
-									_hover={{ color: colors.bg, bg: colors.p }}
+									_hover={{ color: colors.h, bg: colors.p }}
 									variant={"outline"}
 									size={{ base: "sm" }}
 								>
-									<Icon as={n.icon} color={colors.s} />
+									<Icon as={n.icon} color={colors.h} />
 									{n.name}
 								</Button>
 							</Link>
@@ -206,16 +204,16 @@ const navbarItems = [
 		name: "About",
 		icon: FaUser
 	},
-	{
-		name: "Technicial",
-		url: "tech",
-		icon: FaNewspaper
-	},
-	{
-		name: "Skill",
-		url: "skill",
-		icon: FaBook
-	},
+	// {
+	// 	name: "Technicial",
+	// 	url: "tech",
+	// 	icon: FaNewspaper
+	// },
+	// {
+	// 	name: "Skill",
+	// 	url: "skill",
+	// 	icon: FaBook
+	// },
 	{
 		name: "Projects",
 		url: "project",

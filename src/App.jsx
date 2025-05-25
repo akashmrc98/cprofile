@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 
 import { Element } from "react-scroll";
 
-import Akash from "./assets/akash.jpeg";
+import Akash from "./assets/akash.jpg";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import MovingBox from './components/MovingBox'

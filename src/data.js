@@ -373,7 +373,7 @@ export const socialData = [
 		icon: Twitter,
 	},
 	{
-		url: "https://www.instagram.com/shanks98m/",
+		url: "https://www.instagram.com/akash_m98/",
 		icon: Instagram,
 	},
 ];

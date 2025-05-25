@@ -48,11 +48,11 @@ export const aboutMe = {
 				"Worked on large-scale infrastructure solutions for large clients. Focused on building secure backend systems and managing live production environments.",
 			techStack: ["Vue", "Spring Boot", "Spring Security", "Java", "MySQL", "AWS"],
 			highlights: [
-				"Executed end-to-end development of CMS System",
-				"Implemented core authentication and authorization modules to ensure compliance with regulatory standards.",
-				"Collaborated with muliptle teams to deliver key features on schedule, ensuring full alignment with client expectations.",
-				"Participated in code reviews and knowledge sharing, helping uplift code quality and maintain best practices.",
-				"Managed support tickets and change requests post-deployment, improving system uptime and long-term reliability.",
+				"Executed end-to-end development of CMS System ",
+				"Implemented core authentication and authorization modules to ensure compliance with regulatory standards. ",
+				"Collaborated with muliptle teams to deliver key features on schedule, ensuring full alignment with client expectations. ",
+				"Participated in code reviews and knowledge sharing, helping uplift code quality and maintain best practices. ",
+				"Managed support tickets and change requests post-deployment, improving system uptime and long-term reliability. ",
 			],
 		},
 		{
@@ -60,14 +60,14 @@ export const aboutMe = {
 			role: "Full Stack Developer (Backend Lead)",
 			duration: "March 2024 - August 2024",
 			description:
-				"Contributed to the development of custom eCommerce platforms serving a range of clients. Led backend improvements and occasionally contributed to frontend features.",
+				"Contributed to the development of custom eCommerce platforms serving a range of clients. Led backend improvements and occasionally contributed to frontend features. ",
 			techStack: ["Node.js", "Express.js", "MongoDB", "React", "Docker", "AWS"],
 			highlights: [
-				"Developed and maintained backend services for multiple eCommerce platforms and API performance.",
-				"Integrated secure payment gateways and built dynamic product management modules.",
-				"Led backend codebase refactoring and system optimization, reducing latency and improving user experience.",
-				"Collaborated with designers, QA, and other developers in agile sprints to ensure rapid and stable feature rollouts.",
-				"Conducted in-depth bug analysis and debugging sessions that led to a 30% reduction in user-reported issues.",
+				"Developed and maintained backend services for multiple eCommerce platforms and API performance. ",
+				"Integrated secure payment gateways and built dynamic product management modules. ",
+				"Led backend codebase refactoring and system optimization, reducing latency and improving user experience. ",
+				"Collaborated with designers, QA, and other developers in agile sprints to ensure rapid and stable feature rollouts. ",
+				"Conducted in-depth bug analysis and debugging sessions that led to a 30% reduction in user-reported issues. ",
 			],
 		},
 		{
@@ -75,7 +75,7 @@ export const aboutMe = {
 			role: "Software Engineer",
 			duration: "September 2021 - February 2024",
 			description:
-				"Worked at a crypto startup building decentralized products including gaming platforms and marketplaces. Developed full-stack features with an emphasis on performance and UX.",
+				"Worked at a crypto startup building decentralized products including gaming platforms and marketplaces. Developed full-stack features with an emphasis on performance and UX. ",
 			techStack: [
 				"React",
 				"Angular",
@@ -89,11 +89,11 @@ export const aboutMe = {
 				"AWS",
 			],
 			highlights: [
-				"Spearheaded development of decentralized applications, building interactive UIs with React, Angular, and Vue.",
-				"Built RESTful and GraphQL APIs to enhance data access performance and reduce over-fetching issues.",
-				"Developed cross-platform mobile apps using Flutter, maintaining seamless user experiences on both iOS and Android.",
-				"Implemented cron-based automation and async operations for backend workflows, boosting system throughput.",
-				"Worked closely with blockchain engineers to integrate Web3 and NFT features into core applications.",
+				"Spearheaded development of decentralized applications, building interactive UIs with React, Angular, and Vue. ",
+				"Built RESTful and GraphQL APIs to enhance data access performance and reduce over-fetching issues. ",
+				"Developed cross-platform mobile apps using Flutter, maintaining seamless user experiences on both iOS and Android. ",
+				"Implemented cron-based automation and async operations for backend workflows, boosting system throughput. ",
+				"Worked closely with blockchain engineers to integrate Web3 and NFT features into core applications. ",
 			],
 		},
 		{
@@ -101,13 +101,13 @@ export const aboutMe = {
 			role: "Co-Founder",
 			duration: "October 2020 - February 2021",
 			description:
-				"Co-founded a startup aimed at delivering innovative digital solutions. Led a small team and drove technical architecture.",
+				"Co-founded a startup aimed at delivering innovative digital solutions. Led a small team and drove technical architecture. ",
 			techStack: ["Node.js", "React", "MongoDB", "AWS"],
 			highlights: [
-				"Led end-to-end development of web applications with complex data pipelines and admin dashboards.",
-				"Mentored 3+ interns, conducted structured code reviews, and maintained development standards.",
-				"Defined system architecture for products across domains, ensuring scalability and modularity.",
-				"Handled client discussions and project planning to balance technical feasibility and delivery timelines.",
+				"Led end-to-end development of web applications with complex data pipelines and admin dashboards. ",
+				"Mentored 3+ interns, conducted structured code reviews, and maintained development standards. ",
+				"Defined system architecture for products across domains, ensuring scalability and modularity. ",
+				"Handled client discussions and project planning to balance technical feasibility and delivery timelines. ",
 			],
 		},
 		{
@@ -118,9 +118,9 @@ export const aboutMe = {
 				"Participated in WOC 2020 Hackathon. Contributed to open source, mentored students, and led technical development.",
 			techStack: ["MongoDB", "Express.js", "Node.js", "React"],
 			highlights: [
-				"Designed and developed a fully functional, database-driven file management system.",
-				"Mentored contributors in Git workflows, helped with PR reviews, and resolved merge conflicts.",
-				"Reviewed and approved 15+ pull requests, ensuring alignment with project architecture.",
+				"Designed and developed a fully functional, database-driven file management system. ",
+				"Mentored contributors in Git workflows, helped with PR reviews, and resolved merge conflicts. ",
+				"Reviewed and approved 15+ pull requests, ensuring alignment with project architecture. ",
 			],
 		},
 		// {

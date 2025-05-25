@@ -45,10 +45,10 @@ export const aboutMe = {
 			role: "Associate IT Consultant",
 			duration: "September 2024 - Present",
 			description:
-				"Worked on large-scale infrastructure solutions for public sector clients. Focused on building secure backend systems and managing live production environments.",
+				"Worked on large-scale infrastructure solutions for large clients. Focused on building secure backend systems and managing live production environments.",
 			techStack: ["Vue", "Spring Boot", "Spring Security", "Java", "MySQL", "AWS"],
 			highlights: [
-				"Executed end-to-end development of the Western Sydney Airport Card Management System.",
+				"Executed end-to-end development of CMS System",
 				"Implemented core authentication and authorization modules to ensure compliance with regulatory standards.",
 				"Collaborated with muliptle teams to deliver key features on schedule, ensuring full alignment with client expectations.",
 				"Participated in code reviews and knowledge sharing, helping uplift code quality and maintain best practices.",
